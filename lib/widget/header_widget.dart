@@ -7,14 +7,12 @@ class HeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text("RM Jaya"),
+        Text("RM Ramadhan", style: TextStyle(fontWeight: FontWeight.bold)),
         SizedBox(
           height: 25,
         ),
-        
         CircleAvatar(
-          child: Image.network(
-              "https://img.harianjogja.com/posts/2021/11/25/1089145/img_0298-1.jpg"),
+          backgroundImage: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDbs5UxXTL5Uiqfq5v_ExpWgj9c6BByY5TTg&usqp=CAU"),          
           radius: 70,
         )
       ],
