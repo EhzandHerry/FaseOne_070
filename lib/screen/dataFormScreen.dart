@@ -22,19 +22,28 @@ class dataFormScreen extends StatelessWidget {
             child: Column(
               children: [
                 HeaderWidget(),
-                FormWidget(formKey: formKey, etNama: nama, etAlamat: alamat, etNotelp: notelp),
-                FooterWidget(onPressedNext: () {
-                  if (formKey.currentState!.validate()) {
-                    Navigator.pushAndRemoveUntil(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => dataMakananScreen(nama: nama.text, notelp: notelp.text,),
-                        ),
-                        (route) => false);
-                    ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text("Data diproses")));
-                  }
-                })
+                FormWidget(
+                    formKey: formKey,
+                    etNama: nama,
+                    etAlamat: alamat,
+                    etNotelp: notelp),
+                FooterWidget(
+                  onPressedNext: () {
+                    if (formKey.currentState!.validate()) {
+                      Navigator.pushAndRemoveUntil(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => dataMakananScreen(
+                              nama: nama.text,
+                              notelp: notelp.text,
+                            ),
+                          ),
+                          (route) => false);
+                      ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text("Data diproses")));
+                    }
+                  },
+                )
               ],
             ),
           ),

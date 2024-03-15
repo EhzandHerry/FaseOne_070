@@ -66,11 +66,10 @@ class _FormWidgetState extends State<FormWidget> {
               prefixIcon: Icon(Icons.phone),
             ),
             validator: (value) {
-              bool isValidPhoneNumber(String? value) => RegExp(
-                      r'(^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$)')
-                  .hasMatch(value!);
               if (value!.isEmpty) {
-                return "Masukkan notelp dengan benar";
+                return "Masukkan nomor telepon dengan benar";
+              } else if (!RegExp(r'^[0-9]+$').hasMatch(value)) {
+                return "Hanya boleh memasukkan angka";
               }
               return null;
             },
