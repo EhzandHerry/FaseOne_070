@@ -1,16 +1,8 @@
 # pertemuan3ucp1
 
-A new Flutter project.
+Hasil Run :
+![Screenshot 2024-03-15 212903](https://github.com/EhzandHerry/FaseOne_070/assets/115150312/5f4af935-c9a6-409e-a3c3-a34ddb059c23)
 
-## Getting Started
+![Screenshot 2024-03-15 212923](https://github.com/EhzandHerry/FaseOne_070/assets/115150312/08df5318-4ee8-4f08-a34a-1b60619b6646)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot 2024-03-15 212929](https://github.com/EhzandHerry/FaseOne_070/assets/115150312/d4cf283c-fc27-497d-b0c1-17e9f0c54224)
